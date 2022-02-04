@@ -1,0 +1,29 @@
+Notes de Cours - C++
+
+Référence : modifie tout type de variables
+--> ref const : ABSOLUMENT une variable locale
+
+AVantages des ref :
+    - Pour la modifier
+    - Pour éviter une copie
+
+LES CLASSES :
+
+    - Dans .hpp  --> info préprocesseurs, déclaration des structs...
+    - Dans .cpp --> Définition des constructeurs de structures (ou classes)
+    - Dans main.cpp --> Utilisation de la structure avec son/ses constructeur.s
+    
+Appel du constructeur "cons" d'une classe "class" --> class::cons
+
+Protection des variables :
+lorsque l'on fait un changement pour une valeur du vec2 (pour l'exemple), si l'on modiife via v.x() = ...  --> les variables ne sont pas protégées (utilisées comme variables publiques)
+
+Produit scalaire 
+--> ORIENTE OBJET : fonction dot() (symétrique --> c'est cool)
+--> ORIENTE FONCTIONEL : on peut définir cette méthode lors de la  création d'une classe vec2
+                 
+IN GENERAL : IT IS BETTER TO USE NON-MEMBER & NON-FRIEND FUNCTIONS
+
+(ATTENTION : NE SURTOUYT PAS COMPARER DES FLOAT, DOUBLE AVEC == --> 1/2 QUE ÇA PLANTE)
+
+Valeur absolue pour des floatant --> using std::fabs (Fabien LE SAnG)
